@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tien Hoa Hong</title>
+</head>
+<body>
+
+<p>Kiem tra tien hoa hong</p>
+
+<label for="inputA">Enter money:</label>
+<input type="number" id="inputA" required>
+<button type="button" onclick="checkMoney()">Check</button>
+
+<script>
+    function checkMoney() {
+        let a = parseInt(document.getElementById("inputA").value);
+
+
+        if (a >= 50000) {
+            b = 0.5;
+        }
+
+        else if ( a >= 20000 && a < 50000 ) {
+            b = 0.3
+        }
+
+        else {
+            b = 0.2
+        }
+
+        c = a * b
+
+        alert("So Hoa Hong ma ban nhan duoc la " + c);
+
+    }
+</script>
+
+</body>
+</html>

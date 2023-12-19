@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label for="inputA">Enter a:</label>
+<input type="number" id="inputA" required>
+<label for="inputB">Enter b:</label>
+<input type="number" id="inputB" required>
+<button type="button" onclick="checkDivision()">Check</button>
+
+</body>
+</html>
+
+<script>
+
+    function checkDivision() {
+
+
+        let a = document.getElementById("inputA").value;
+        let b = document.getElementById("inputB").value;
+
+        if (a % b == 0) {
+            alert("A chia het cho B");
+        }
+
+        else {
+            alert("A khong chia het cho B");
+
+        }
+    }
+</script>

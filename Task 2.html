@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<label for="inputage">Enter student age:</label>
+<input type="number" id="inputAge" required>
+<button type="button" onclick="checkAge()">Check</button>
+
+<script>
+    function checkAge() {
+        let a = document.getElementById("inputAge").value;
+
+
+        if (a < 16) {
+            alert("You cannot study at high school");
+        }
+
+        else {
+            alert("Congratulation! You can study at high school");
+        }
+    }
+</script>
+
+</body>
+</html>

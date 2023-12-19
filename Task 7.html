@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh cuoc dien thoai</title>
+</head>
+<body>
+
+<p>Tinh Cuoc Dien Thoai</p>
+<p>Chu Thich: Tinh theo phut</p>
+
+<label for="inputA">Enter minutes:</label>
+<input type="number" id="inputA" required>
+<button type="button" onclick="checkMinutes()">Check</button>
+
+<script>
+    function checkMinutes() {
+        let a = parseInt(document.getElementById("inputA").value);
+        //Default 1 Minute = 100 VND
+        let b = 100;
+
+        c = a * b
+
+        alert("So Tien ban phai tra cho cuoc goi vua roi la " + c);
+    }
+
+</script>
+
+</body>
+</html>

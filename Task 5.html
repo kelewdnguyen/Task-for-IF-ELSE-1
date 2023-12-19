@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p> Nhan Xet Hoc Sinh</p>
+<p> Chu Thich: Hoc Sinh Gioi > 8.0 <br> Hoc Sinh Kha 7 - 8 <br> Hoc Sinh Trung Binh 5 - 7 <br> Hoc Sinh Yeu < 5 </p>
+
+
+<label for="inputA">Enter your daily exam score:</label>
+<input type="number" id="inputA" required>
+<label for="inputB">Enter your mid-term exam score:</label>
+<input type="number" id="inputB" required>
+<label for="inputC">Enter your final exam score:</label>
+<input type="number" id="inputC" required>
+<button type="button" onclick="checkRank()">Check</button>
+
+<script>
+    function checkRank() {
+        let a = parseFloat(document.getElementById("inputA").value);
+        let b = parseFloat(document.getElementById("inputB").value);
+        let c = parseFloat(document.getElementById("inputC").value);
+
+        /*
+        a = parseInt();
+        b = parseInt();
+        c = parseInt();
+         */
+
+        d = ((a + b + c) / 3);
+
+
+        if (d >= 8) {
+            alert("Hoc Sinh Gioi");
+        }
+
+        else if (d >= 7 && d < 8) {
+            alert("Hoc Sinh Kha");
+        }
+
+        else if (d >= 5 && d < 7) {
+            alert("Hoc Sinh Trung Binh");
+        }
+
+        else {
+            alert("Hoc Sinh Yeu");
+        }
+    }
+</script>
+
+</body>
+</html>
